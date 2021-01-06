@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Stylish - The best E commerce website" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./scripts/common.js" defer></script>
+    <script src="./scripts/script.js" defer></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0ZL6TLL155"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-0ZL6TLL155');
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="padding-mobile"></div>
+      <div class="logo">
+        <a href="./">
+          <img src="images/logo.png" alt="logo-image" />
+        </a>
+      </div>
+
+      <nav>
+        <div class="item womenItem"><a href="./?tag=women">女裝</a></div>
+        <div class="item menItem"><a href="./?tag=men">男裝</a></div>
+        <div class="item accessoriesItem">
+          <a href="./?tag=accessories">配件</a>
+        </div>
+      </nav>
+
+      <div class="feature">
+        <form action="./" class="item">
+          <input type="text" class="search" name="tag" />
+        </form>
+
+        <a href="./cart.html" class="item cart">
+          <div id="cart-qty" class="qty">0</div>
+        </a>
+
+        <div class="item member">
+          <img src="images/member.png" alt="member-icon" />
+        </div>
+      </div>
+    </header>
+
+    <nav class="mobile">
+      <div class="item womenItem"><a href="./?tag=women">女裝</a></div>
+      <div class="item menItem"><a href="./?tag=men">男裝</a></div>
+      <div class="item accessoriesItem">
+        <a href="./?tag=accessories">配件</a>
+      </div>
+    </nav>
+
+    <div class="padding-header-mobile"></div>
+
+    <div class="feature-mobile">
+      <a href="./cart.html" class="item">
+        <div class="cart">
+          <div id="cart-qty-mobile" class="qty">0</div>
+        </div>
+        購物車
+      </a>
+      <div class="item member">
+        <img src="images/member-mobile.png" alt="member-icon" />
+        會員
+      </div>
+    </div>
+
+    <div class="keyvisual" id="keyvisual"></div>
+
+    <main>
+      <div class="view">
+        <div id="products" class="products">
+          <!-- product dynamically inserted by AJAX -->
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="view">
+        <div class="link link-0">
+          <div class="item">關於 Stylish</div>
+          <div class="item">服務條款</div>
+          <div class="item">隱私政策</div>
+        </div>
+        <div class="link link-1">
+          <div class="item">聯絡我們</div>
+          <div class="item">FAQ</div>
+        </div>
+        <div class="social">
+          <img src="images/line.png" alt="line-icon" />
+          <img src="images/twitter.png" alt="twitter-icon" />
+          <img src="images/facebook.png" alt="facebook-icon" />
+        </div>
+        <div class="copyright">© 2018. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: 'AIzaSyDDjV1SjtvcYOiZZpAgDw-Am31zoT32CcU',
+        authDomain: 'stylish-72f77.firebaseapp.com',
+        databaseURL: 'https://stylish-72f77.firebaseio.com',
+        projectId: 'stylish-72f77',
+        storageBucket: 'stylish-72f77.appspot.com',
+        messagingSenderId: '210865461125',
+        appId: '1:210865461125:web:b6c8887761db6bd1ec16ec',
+        measurementId: 'G-YJ71QEF22P',
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+  </body>
+</html>

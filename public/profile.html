@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Profile page where you can check sign in status" />
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/profile.css" />
+    <script src="./scripts/common.js" defer></script>
+    <script src="./scripts/profile.js" defer></script>
+    <script src="https://js.tappaysdk.com/tpdirect/v5.4.0"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0ZL6TLL155"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-0ZL6TLL155');
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <div class="padding-mobile"></div>
+      <div class="logo">
+        <a href="./">
+          <img src="images/logo.png" alt="logo-image" />
+        </a>
+      </div>
+
+      <nav>
+        <div class="item womenItem">
+          <a href="./?tag=women">女裝</a>
+        </div>
+        <div class="item menItem">
+          <a href="./?tag=men">男裝</a>
+        </div>
+        <div class="item accessoriesItem">
+          <a href="./?tag=accessories">配件</a>
+        </div>
+      </nav>
+
+      <div class="feature">
+        <form action="./" class="item">
+          <input type="text" class="search" name="tag" />
+        </form>
+
+        <a href="./cart.html" class="item cart">
+          <div id="cart-qty" class="qty">0</div>
+        </a>
+
+        <div class="item member">
+          <img src="images/member.png" alt="member-icon" />
+        </div>
+      </div>
+    </header>
+
+    <nav class="mobile">
+      <div class="item womenItem">
+        <a href="./?tag=women">女裝</a>
+      </div>
+      <div class="item menItem">
+        <a href="./?tag=men">男裝</a>
+      </div>
+      <div class="item accessoriesItem">
+        <a href="./?tag=accessories">配件</a>
+      </div>
+    </nav>
+
+    <div class="padding-header-mobile"></div>
+
+    <div class="feature-mobile">
+      <a href="./cart.html" class="item">
+        <div class="cart">
+          <div id="cart-qty-mobile" class="qty">0</div>
+        </div>
+        購物車
+      </a>
+      <div class="item member">
+        <img src="images/member-mobile.png" alt="member-icon" />
+        會員
+      </div>
+    </div>
+
+    <main>
+      <div class="view">
+        <h2 class="headline">會員基本資訊</h2>
+
+        <div class="profile-container">
+          <div class="picture">
+            <img id="profile-picture" src="" alt="profile-picture" />
+          </div>
+          <div class="details" id="profile-details"></div>
+        </div>
+
+        <button class="logout-btn">登出</button>
+      </div>
+    </main>
+
+    <footer>
+      <div class="view">
+        <div class="link link-0">
+          <div class="item">關於 Stylish</div>
+          <div class="item">服務條款</div>
+          <div class="item">隱私政策</div>
+        </div>
+        <div class="link link-1">
+          <div class="item">聯絡我們</div>
+          <div class="item">FAQ</div>
+        </div>
+        <div class="social">
+          <img src="images/line.png" alt="line-icon" />
+          <img src="images/twitter.png" alt="twitter-icon" />
+          <img src="images/facebook.png" alt="facebook-icon" />
+        </div>
+        <div class="copyright">© 2018. All rights reserved.</div>
+      </div>
+    </footer>
+  </body>
+</html>
